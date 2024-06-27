@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyStatus: Your Weather Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>SkyStatus</h1>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="location-input" placeholder="Enter city or zip code">
+                <button id="search-button">Check Weather</button>
+            </div>
+            <div id="weather-display" class="weather-display hidden">
+                <div class="location-info">
+                    <h2 id="location-name"></h2>
+                    <p id="date-time"></p>
+                </div>
+                <div class="weather-info">
+                    <div class="temperature-box">
+                        <span id="temperature"></span>
+                        <span id="feels-like"></span>
+                    </div>
+                    <div class="condition-box">
+                        <img id="weather-icon" src="" alt="Weather icon">
+                        <span id="weather-condition"></span>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <div class="info-item">
+                        <span class="info-label">Humidity</span>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Wind</span>
+                        <span id="wind-speed"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Visibility</span>
+                        <span id="visibility"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Pressure</span>
+                        <span id="pressure"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 SkyStatus. Powered by OpenWeatherMap.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
